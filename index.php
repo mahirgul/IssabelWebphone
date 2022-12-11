@@ -339,30 +339,30 @@ if (isset($_SESSION['issabel_user']) &&
             require_once('themes/'.$arrConf['mainTheme'].'/themesetup.php');
             themeSetup($smarty, $selectedMenu, $pdbACL, $pACL, $idUser);
 			
-			if(strpos($_SERVER[REQUEST_URI], 'agent_console') == true || strpos($_SERVER[REQUEST_URI], 'myex_config') == true)
-			{
-				$webPhoneExtension = $pACL->getUserExtension($_SESSION['issabel_user']);
-				if($webPhoneExtension>0){
-					echo '<script type="text/javascript">';
-					echo "localStorage.setItem('mhrgl.com.identity.display_name', $webPhoneExtension);";
-					echo "localStorage.setItem('mhrgl.com.identity.impi', $webPhoneExtension);";
-					echo "localStorage.setItem('mhrgl.com.identity.impu', 'sip:'+ $webPhoneExtension+'@'+ window.location.hostname);";
-					echo "localStorage.setItem('mhrgl.com.identity.password', 'yourExtensionPassword');";
-					echo "localStorage.setItem('mhrgl.com.identity.realm', window.location.hostname);";
-					echo "localStorage.setItem('mhrgl.com.expert.disable_video', 'true');";
-					echo "localStorage.setItem('mhrgl.com.expert.disable_callbtn_options', 'true');";
-					echo "localStorage.setItem('mhrgl.com.expert.websocket_server_url', 'wss://' + window.location.hostname + ':8089/ws');";
-																				//[{ url: \'stun:stun.l.google.com:19302\'}]
-					//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[]');";
-					//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'turn:' + window.location.hostname + '\', username:\'turn1\', credential:\'turn1\',}]');";
-					//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'stun:' + window.location.hostname + ':3478\'}]');";
-					//echo "localStorage.setItem('mhrgl.com.expert.ice_servers',   '[{ url: \'stun:' + window.location.hostname + '\' }, { url:\'turn:' + window.location.hostname + '\', username:\'turn1\', credential:\'turn1\', credentialType:\'password\' }]');";
-					echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'stun:stun.a.google.com:19302\'}]');";
-					//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url:\'turn:' + window.location.hostname + '\', username:\'turn1\', credential:\'turn1\', credentialType:\'password\' }]');";
-					echo "</script>";
-					include("webphone/webphone.php");
-				}
+		if(strpos($_SERVER[REQUEST_URI], 'agent_console') == true || strpos($_SERVER[REQUEST_URI], 'myex_config') == true)
+		{
+			$webPhoneExtension = $pACL->getUserExtension($_SESSION['issabel_user']);
+			if($webPhoneExtension>0){
+				echo '<script type="text/javascript">';
+				echo "localStorage.setItem('mhrgl.com.identity.display_name', $webPhoneExtension);";
+				echo "localStorage.setItem('mhrgl.com.identity.impi', $webPhoneExtension);";
+				echo "localStorage.setItem('mhrgl.com.identity.impu', 'sip:'+ $webPhoneExtension+'@'+ window.location.hostname);";
+				echo "localStorage.setItem('mhrgl.com.identity.password', 'yourExtensionPassword');";
+				echo "localStorage.setItem('mhrgl.com.identity.realm', window.location.hostname);";
+				echo "localStorage.setItem('mhrgl.com.expert.disable_video', 'true');";
+				echo "localStorage.setItem('mhrgl.com.expert.disable_callbtn_options', 'true');";
+				echo "localStorage.setItem('mhrgl.com.expert.websocket_server_url', 'wss://' + window.location.hostname + ':8089/ws');";
+				//[{ url: \'stun:stun.l.google.com:19302\'}]
+				//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[]');";
+				//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'turn:' + window.location.hostname + '\', username:\'turn1\', credential:\'turn1\',}]');";
+				//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'stun:' + window.location.hostname + ':3478\'}]');";
+				//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'stun:' + window.location.hostname + '\' }, { url:\'turn:' + window.location.hostname + '\', username:\'turn1\', credential:\'turn1\', credentialType:\'password\' }]');";
+				  echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'stun:stun.a.google.com:19302\'}]');";
+				//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url:\'turn:' + window.location.hostname + '\', username:\'turn1\', credential:\'turn1\', credentialType:\'password\' }]');";
+				echo "</script>";
+				include("webphone/webphone.php");
 			}
+		}
         }
 
         // La muestra de stickynote está ahora habilitada para todos los temas.
