@@ -352,7 +352,7 @@ if (isset($_SESSION['issabel_user']) &&
 				echo "localStorage.setItem('mhrgl.com.expert.disable_video', 'true');";
 				echo "localStorage.setItem('mhrgl.com.expert.disable_callbtn_options', 'true');";
 				echo "localStorage.setItem('mhrgl.com.expert.websocket_server_url', 'wss://' + window.location.hostname + ':8089/ws');";
-				//[{ url: \'stun:stun.l.google.com:19302\'}]
+				
 				//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[]');";
 				//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'turn:' + window.location.hostname + '\', username:\'turn1\', credential:\'turn1\',}]');";
 				//echo "localStorage.setItem('mhrgl.com.expert.ice_servers', '[{ url: \'stun:' + window.location.hostname + ':3478\'}]');";
