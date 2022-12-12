@@ -1,4 +1,9 @@
 # Issabel 4, Call Center Module and SimML5 Integration
+Note: 
+Thanks:
+https://github.com/DoubangoTelecom/sipml5
+https://www.issabel.org/
+
 ### Firstly you have install Issabel 4 with Asterisk 11 and Call Center module.
 #### After, you need to update with this command.
 ``` 
