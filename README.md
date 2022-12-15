@@ -70,7 +70,7 @@ After adding it should look something like this.
 ### Assing extension for user
 ![image](https://user-images.githubusercontent.com/8502843/206914468-7b1b3d6e-bbca-4ffd-bb19-ecafd7099b60.png)
 
-### Finally edit /var/www/html/modulesagent_console/index.php file. 
+### Finally edit /var/www/html/modules/agent_console/index.php file. 
 Find  $onlyCallback=0; on line 52 and change like this $onlyCallback=1;
 ![image](https://user-images.githubusercontent.com/8502843/207910860-5b13c767-1317-431f-944a-f17faf5cfe13.png)
 
