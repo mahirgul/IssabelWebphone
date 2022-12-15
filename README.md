@@ -1,4 +1,5 @@
 # Issabel 4, Call Center Module and SimML5 Integration
+(Note:$onlyCallback=1; Module working with only callback mode agents)
 Thanks:
 https://github.com/DoubangoTelecom/sipml5
 https://www.issabel.org/
