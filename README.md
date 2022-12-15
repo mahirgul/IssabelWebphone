@@ -1,5 +1,4 @@
 # Issabel 4, Call Center Module and SimML5 Integration
-Note: 
 Thanks:
 https://github.com/DoubangoTelecom/sipml5
 https://www.issabel.org/
@@ -70,6 +69,10 @@ After adding it should look something like this.
 
 ### Assing extension for user
 ![image](https://user-images.githubusercontent.com/8502843/206914468-7b1b3d6e-bbca-4ffd-bb19-ecafd7099b60.png)
+
+### Finally edit /var/www/html/modulesagent_console/index.php file. Find  $onlyCallback=0; on line 52 and change $onlyCallback=1;
+![image](https://user-images.githubusercontent.com/8502843/207910860-5b13c767-1317-431f-944a-f17faf5cfe13.png)
+
 
 ## That's all we're going to do. When we enter agent_console and myex_config pages, the softphone becomes active.
 ![image](https://user-images.githubusercontent.com/8502843/206915181-1fe237d6-76a3-4413-876a-15accea6e25c.png)
