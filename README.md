@@ -1,4 +1,4 @@
-# Issabel 4, Call Center Module and SimML5 Integration
+# Issabel 4, Call Center Module and SipML5 Integration
 (Note:$onlyCallback=1; Module working with only callback mode agents)
 
 Thanks:
