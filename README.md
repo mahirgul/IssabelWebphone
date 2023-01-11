@@ -38,7 +38,7 @@ Edit index.php and find this on estimated 340th line
 ```
 themeSetup($smarty, $selectedMenu, $pdbACL, $pACL, $idUser);
 ```
-Add the following lines after this line. **yourExtensionPassword must be same externsion secret.**
+Add the following lines after this line. 
 ```
 if(strpos($_SERVER[REQUEST_URI], 'agent_console') == true || strpos($_SERVER[REQUEST_URI], 'myex_config') == true)
 {
