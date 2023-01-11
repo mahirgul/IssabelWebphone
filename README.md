@@ -53,7 +53,7 @@ if(strpos($_SERVER[REQUEST_URI], 'agent_console') == true || strpos($_SERVER[REQ
     echo "localStorage.setItem('mhrgl.com.identity.display_name', $webPhoneExtension);";
     echo "localStorage.setItem('mhrgl.com.identity.impi', $webPhoneExtension);";
     echo "localStorage.setItem('mhrgl.com.identity.impu', 'sip:'+ $webPhoneExtension+'@'+ window.location.hostname);";
-		echo "localStorage.setItem('mhrgl.com.identity.password', $webphonePassword[0]);";
+    echo "localStorage.setItem('mhrgl.com.identity.password', $webphonePassword[0]);";
     echo "localStorage.setItem('mhrgl.com.identity.realm', window.location.hostname);";
     echo "localStorage.setItem('mhrgl.com.expert.disable_video', 'true');";
     echo "localStorage.setItem('mhrgl.com.expert.disable_callbtn_options', 'true');";
