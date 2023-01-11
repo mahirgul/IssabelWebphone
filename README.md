@@ -66,8 +66,7 @@ if(strpos($_SERVER[REQUEST_URI], 'agent_console') == true || strpos($_SERVER[REQ
 }
 ```
 After adding it should look something like this.
-
-![image](https://user-images.githubusercontent.com/8502843/206914378-33f680a5-c33b-44d3-8904-59bdcbc363f3.png)
+![image](https://user-images.githubusercontent.com/8502843/211925339-bf8644a7-48a8-408f-9768-967dee6d4e68.png)
 
 ### Add Webrtc Extension
 ![image](https://user-images.githubusercontent.com/8502843/206914544-894482be-bb15-4dfc-a088-0776c2531840.png)
