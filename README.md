@@ -71,8 +71,7 @@ After adding it should look something like this.
 ### Add Webrtc Extension
 ![image](https://user-images.githubusercontent.com/8502843/206914544-894482be-bb15-4dfc-a088-0776c2531840.png)
 
-![image](https://user-images.githubusercontent.com/8502843/206914667-99ad694f-8794-49b8-9ec8-9552cfd1b2aa.png)
-
+![image](https://user-images.githubusercontent.com/8502843/211926972-a6abe28a-3c06-4317-9271-819666597c18.png)
 
 ### Assing extension for user
 ![image](https://user-images.githubusercontent.com/8502843/206914468-7b1b3d6e-bbca-4ffd-bb19-ecafd7099b60.png)
