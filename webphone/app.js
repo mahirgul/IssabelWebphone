@@ -14,10 +14,7 @@ var cbAVPFDisable;
 var txtWebsocketServerUrl;
 var txtSIPOutboundProxyUrl;
 var txtInfo;
-
-
-
-
+var autoAnswer = false;
 
 window.onload = function () {
 	
@@ -90,7 +87,6 @@ window.onload = function () {
 	},
 	500);
 
-	
 };
 
 function postInit() {
@@ -504,6 +500,10 @@ function onSipEventStack(e /*SIPml.Stack.Event*/) {
 					var sRemoteNumber = (oSipSessionCall.getRemoteFriendlyName() || 'unknown');
 					txtCallStatus.innerHTML = "<i>Incoming call from [<b>" + sRemoteNumber + "</b>]</i>";
 					showNotifICall(sRemoteNumber);
+					window.focus();
+					if(autoAnswer){
+						oSipSessionCall.accept(oConfigCall);
+					}
 				}
 				break;
 			}
