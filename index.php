@@ -344,14 +344,14 @@ if (isset($_SESSION['issabel_user']) &&
 			$webPhoneExtension = $pACL->getUserExtension($_SESSION['issabel_user']);
 			$dsn1 = generarDSNSistema('asteriskuser', 'asterisk');
 			$pdbACL1 = new paloDB($dsn1);
-			$webphonePassword = $pdbACL1->fetchTable("SELECT data from sip WHERE id = '$webPhoneExtension' AND keyword = 'secret';")[0];
+			$webPhonePassword = $pdbACL1->fetchTable("SELECT data from sip WHERE id = '$webPhoneExtension' AND keyword = 'secret';")[0];
 
 			if($webPhoneExtension>0){
 				echo '<script type="text/javascript">';
 				echo "localStorage.setItem('mhrgl.com.identity.display_name', $webPhoneExtension);";
 				echo "localStorage.setItem('mhrgl.com.identity.impi', $webPhoneExtension);";
 				echo "localStorage.setItem('mhrgl.com.identity.impu', 'sip:'+ $webPhoneExtension+'@'+ window.location.hostname);";
-				echo "localStorage.setItem('mhrgl.com.identity.password', $webphonePassword[0]);";
+				echo "localStorage.setItem('mhrgl.com.identity.password', $webPhonePassword[0]);";
 				echo "localStorage.setItem('mhrgl.com.identity.realm', window.location.hostname);";
 				echo "localStorage.setItem('mhrgl.com.expert.disable_video', 'true');";
 				echo "localStorage.setItem('mhrgl.com.expert.disable_callbtn_options', 'true');";
